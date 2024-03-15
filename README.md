@@ -13,6 +13,10 @@ E.g.
 - For input arr [3,3,3,5,4] answer should be 3
 - For input arr [6,5,5,6,2,2] answer should be 4
 
+Constraints
+- 1 <= N <= 10^5
+- 1 <= A[i] <= N
+
 # Solution
 We can observe that if assume X is a possible then definitely X-1 will also be a possible answer because if we can make a square with side length X then we can also create a square with smaller side length.
 But we can not tell this for X+1. So using this observation, we can apply Binary Search over answer and our answer can lie between 0 to N (size of matrix). Now question becomes how to find where X is a possible answer or not??
