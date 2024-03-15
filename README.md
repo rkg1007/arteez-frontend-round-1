@@ -19,7 +19,7 @@ Constraints
 
 # Solution
 We can observe that if assume X is a possible then definitely X-1 will also be a possible answer because if we can make a square with side length X then we can also create a square with smaller side length.
-But we can not tell this for X+1. So using this observation, we can apply Binary Search over answer and our answer can lie between 0 to N (size of matrix). Now question becomes how to find where X is a possible answer or not??
+But we can not tell this for X+1. So using this observation, we can apply Binary Search over answer and our answer can lie between 0 to N (size of matrix). Now question becomes how to find whether X is a possible answer or not??
 
 To find where X is possible answer or not, we can traverse over given array indexes one by one and check if current index can become left side of square or not which has side length as X. 
 For each index `i`, if all the indexes from `i` to `i+X-1` has minimum value X then index `i` can become possible left side of square which has side length as X. Now again our question reduced to 
